@@ -1,6 +1,7 @@
-# ammar_shah_resume.rb
+# Some Applicant class exists
 class Applicant; end
 
+# ammar_shah_resume.rb
 module AmmarShahResume
   refine Applicant do
     def name
@@ -15,110 +16,111 @@ module AmmarShahResume
       "https://drive.google.com/file/d/1svqe2WllbX5Ae5TtbycydwEKVjFtJOuo"
     end
 
-    def about_me
-      "The only language I speak is What, When, Why, Which, How, etc because curiosity originates questions, which leads to more curiosity, which leads to even more curiosity ... and that has put me on an endless learning roller coaster and I'm loving to ride it because, fortunately, I was born extremely curious."
+    def about
+      "The only language I speak is 'What, When, Why, Which, How, etc.' because curiosity originates questions, which leads to more curiosity, which leads to even more curiosity ... which has put me on an endless learning roller coaster that I'm loving to ride because, fortunately, I was born extremely curious."
     end
 
-    def profile_links
+    def profiles
       [
         { platform: "LinkedIn", url: "https://linkedin.com/in/ammarvellous" },
         { platform: "GitHub",   url: "https://github.com/ammarshah" }
       ]
     end
 
-    def contact_information
+    def contact
       {
-        algorithm: "HS256",
-        token_type: "JWT",
-        token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtbWFyc2hhaDEyM0BnbWFpbC5jb20iLCJwaG9uZSI6Iis5Mi0zNDMtMjY0MDQyMSIsImFkZHJlc3MiOiJIb3VzZSBuby4gQi0xOSwgS0RBIFNjaGVtZSBuby4gMzYsIEd1bGlzdGFuLWUtSmF1aGFyLCBCbG9jay0xMywgS2FyYWNoaSwgUGFraXN0YW4ifQ.TcR1IOFwv16BpqlGDBhpmG44bkZ9a6weOGoBQiBfJzo"
+        alg:   "HS256",
+        typ:   "JWT",
+        token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtbWFyc2hhaDEyM0BnbWFpbC5jb20iLCJwaG9uZSI6Iis5Mi0zNDMtMjY0MDQyMSIsImFkZHJlc3MiOiJIb3VzZSBuby4gQi0xOSwgS0RBIFNjaGVtZSBuby4gMzYsIEd1bGlzdGFuLWUtSmF1aGFyLCBCbG9jay0xMywgS2FyYWNoaSwgUGFraXN0YW4ifQ.TcR1IOFwv16BpqlGDBhpmG44bkZ9a6weOGoBQiBfJzo",
+        hint:  "You don't need to write code to decode this JWT token."
       }
     end
 
     def education
       [
         {
-          degree: "Bachelor of Computer Science",
+          degree:     "Bachelor of Computer Science",
           university: "Federal Urdu University of Arts, Sciences & Technology",
-          location: "Karachi, Pakistan",
-          year: 2014,
-          cgpa: 3.07
+          location:   "Karachi, Pakistan",
+          year:       2014,
+          cgpa:       3.07
         }
       ]
     end
 
     def skills
       {
-        "Programming/Scripting Languages" => [ "Ruby", "JavaScript", "CoffeeScript" ],
-        "Backend Frameworks/Tools"        => [ "Ruby on Rails" ],
-        "Frontend Technologies"           => [ "HTML", "CSS", "Hotwire (Turbo & Stimulus)", "Tailwind CSS", "SVG" ],
-        "Database Management Systems"     => [ "PostgreSQL", "MySQL", "MongoDB" ],
-        "Testing Frameworks"              => [ "RSpec", "Capybara", "Cucumber" ],
-        "Containerization Tools"          => [ "Docker" ],
-        "Deployment/Hosting Platforms"    => [ "DigitalOcean", "Heroku", "Render" ],
-        "CI/CD Tools"                     => [ "CircleCI", "Capistrano" ],
-        "Search Technologies/Engines"     => [ "MongoDB Atlas Search" ],
-        "Version Control Systems"         => [ "Git" ],
-        "Operating Systems"               => [ "Ubuntu", "Windows" ],
-        "API Architectures"               => [ "REST API" ],
-        "Data Formats"                    => [ "JSON", "XML" ],
-        "API Integrations"                => [ "Amazon - Product Advertising API", "Google Maps API" ],
-        "File Storage Services"           => [ "Amazon S3" ],
-        "Security"                        => [ "SSL Certificates" ],
-        "Background/Scheduled Jobs"       => [ "Sidekiq", "Delayed Job", "Cron Jobs (using sidekiq-cron gem)" ],
-        "Project Management Tools"        => [ "Jira", "Trello" ]
+        "Languages & Frameworks"    => [ "Ruby", "Ruby on Rails", "JavaScript", "Stimulus" ],
+        "Frontend & Design"         => [ "HTML", "CSS", "Tailwind", "Turbo", "SVG" ],
+        "Databases"                 => [ "PostgreSQL", "MySQL", "MongoDB" ],
+        "Testing"                   => [ "RSpec", "Capybara", "Cucumber" ],
+        "Containerization"          => [ "Docker" ],
+        "Cloud Providers"           => [ "DigitalOcean", "Heroku", "Render" ],
+        "CI/CD"                     => [ "CircleCI", "Capistrano" ],
+        "Search Engines"            => [ "MongoDB Atlas Search" ],
+        "Version Control"           => [ "Git" ],
+        "Operating Systems"         => [ "Ubuntu", "Windows" ],
+        "API Architectures"         => [ "REST API" ],
+        "Data Formats"              => [ "JSON", "XML" ],
+        "Storage Services"          => [ "Amazon S3" ],
+        "Security"                  => [ "SSL Certificates" ],
+        "Background/Recurring Jobs" => [ "Sidekiq", "Delayed Job", "Sidekiq-Cron" ],
+        "Project Management"        => [ "Jira", "Trello" ]
       }
     end
 
     def experience
+      details_url = "https://www.linkedin.com/in/ammarvellous/details/experience"
+
       [
         {
-          title: "Senior Software Engineer",
-          company: "Metamorph Digital",
+          title:      "Senior Software Engineer",
+          company:    "Metamorph Digital",
           start_date: "May 2024",
-          end_date: "September 2024",
-          details: "https://www.linkedin.com/in/ammarvellous/details/experience"
+          end_date:   "September 2024",
+          details:    "Please find the details at #{details_url}"
         },
         {
-          title: "Senior Software Engineer",
-          company: "Cooperative Computing",
+          title:      "Senior Software Engineer",
+          company:    "Cooperative Computing",
           start_date: "October 2022",
-          end_date: "March 2023",
-          details: "https://www.linkedin.com/in/ammarvellous/details/experience"
+          end_date:   "March 2023",
+          details:    "Please find the details at #{details_url}"
         },
         {
-          title: "Senior Software Engineer",
-          company: "Folio3",
+          title:      "Senior Software Engineer",
+          company:    "Folio3",
           start_date: "January 2019",
-          end_date: "March 2021",
-          details: "https://www.linkedin.com/in/ammarvellous/details/experience"
+          end_date:   "March 2021",
+          details:    "Please find the details at #{details_url}"
         },
         {
-          title: "Software Engineer",
-          company: "Folio3",
+          title:      "Software Engineer",
+          company:    "Folio3",
           start_date: "May 2018",
-          end_date: "December 2018",
-          details: "https://www.linkedin.com/in/ammarvellous/details/experience"
+          end_date:   "December 2018",
+          details:    "Please find the details at #{details_url}"
         },
         {
-          title: "Software Engineer",
-          company: "Aradiom Pvt. Ltd.",
+          title:      "Software Engineer",
+          company:    "Aradiom Pvt. Ltd.",
           start_date: "April 2017",
-          end_date: "April 2018",
-          details: "https://www.linkedin.com/in/ammarvellous/details/experience"
+          end_date:   "April 2018",
+          details:    "Please find the details at #{details_url}"
         },
         {
-          title: "Software Engineer",
-          company: "Attribe Solutions",
+          title:      "Software Engineer",
+          company:    "Attribe Solutions",
           start_date: "October 2015",
-          end_date: "March 2017",
-          details: "https://www.linkedin.com/in/ammarvellous/details/experience"
+          end_date:   "March 2017",
+          details:    "Please find the details at #{details_url}"
         },
         {
-          title: "Junior Software Engineer",
-          company: "Attribe Solutions",
+          title:      "Junior Software Engineer",
+          company:    "Attribe Solutions",
           start_date: "September 2014",
-          end_date: "September 2015",
-          details: "https://www.linkedin.com/in/ammarvellous/details/experience"
+          end_date:   "September 2015",
+          details:    "Please find the details at #{details_url}"
         }
       ]
     end
@@ -126,15 +128,15 @@ module AmmarShahResume
     def personal_projects
       [
         {
-          name: "Todoer",
-          description: "A simple to-do list app.",
-          demo_url: "https://todoer-9s1j.onrender.com",
+          name:            "Todoer",
+          description:     "A simple to-do list app.",
+          demo_url:        "https://todoer-9s1j.onrender.com",
           source_code_url: "https://github.com/ammarshah/todoer"
         },
         {
-          name: "Game Hub",
-          description: "Lists games using rawg.io API.",
-          demo_url: "https://gamehub-ammarvellous.vercel.app",
+          name:            "Game Hub",
+          description:     "Lists games using RAWG API.",
+          demo_url:        "https://gamehub-ammarvellous.vercel.app",
           source_code_url: "https://github.com/ammarshah/game_hub"
         }
       ]
