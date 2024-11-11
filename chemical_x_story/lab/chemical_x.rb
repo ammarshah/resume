@@ -23,6 +23,10 @@ module ChemicalX
       ]
     end
 
+    def email
+      "ammarshah123@gmail.com"
+    end
+
     def contact
       {
         alg:   "HS256",
@@ -139,8 +143,3 @@ module ChemicalX
     end
   end
 end
-
-# This is a safer version of the well-known Chemical X.
-#
-# You can read its full story in the right context here:
-# https://github.com/ammarshah/resume/tree/master/chemical_x_story
