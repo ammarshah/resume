@@ -27,21 +27,9 @@ module ChemicalX
       {
         alg:   "HS256",
         typ:   "JWT",
-        token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtbWFyc2hhaDEyM0BnbWFpbC5jb20iLCJwaG9uZSI6Iis5Mi0zNDMtMjY0MDQyMSIsImFkZHJlc3MiOiJCLTE5LCBHdWxpc3Rhbi1lLUphdWhhciwgQmxvY2stMTMsIEthcmFjaGksIFBha2lzdGFuIn0.yDEJEFDnp3i_JPCtWQVgPH4iREgTPAQ5XNSIsa0Bq4k",
-        hint:  "You don't need to write code to decode this JWT token."
+        token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtbWFyc2hhaDEyM0BnbWFpbC5jb20iLCJwaG9uZSI6Iis5Mi0zNDMtMjY0MDQyMSJ9.YDMT5IPeLG2RcGfhJ9KpgwTXngzlVlEvZtKp0-RGfc0",
+        hint:  "You don't have to be a coder to decode this JWT token."
       }
-    end
-
-    def education
-      [
-        {
-          degree:     "Bachelor of Computer Science",
-          university: "Federal Urdu University of Arts, Sciences & Technology",
-          location:   "Karachi, Pakistan",
-          year:       2014,
-          cgpa:       3.07
-        }
-      ]
     end
 
     def skills
@@ -55,7 +43,7 @@ module ChemicalX
         "CI/CD"                     => [ "CircleCI", "Capistrano" ],
         "Search Engines"            => [ "MongoDB Atlas Search" ],
         "Version Control"           => [ "Git" ],
-        "Operating Systems"         => [ "Ubuntu", "Windows" ],
+        "Operating Systems"         => [ "Linux", "Windows" ],
         "API Architectures"         => [ "REST API" ],
         "Data Formats"              => [ "JSON", "XML" ],
         "Storage Services"          => [ "Amazon S3" ],
@@ -117,6 +105,18 @@ module ChemicalX
           start_date: "September 2014",
           end_date:   "September 2015",
           details:    "Please find the details at #{details_url}"
+        }
+      ]
+    end
+
+    def education
+      [
+        {
+          degree:     "Bachelor of Computer Science",
+          university: "Federal Urdu University of Arts, Sciences & Technology",
+          location:   "Karachi, Pakistan",
+          year:       2014,
+          cgpa:       3.07
         }
       ]
     end
