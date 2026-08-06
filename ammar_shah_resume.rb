@@ -36,8 +36,8 @@ module ChemicalX
       {
         "Languages & Frameworks"    => [ "Ruby", "Ruby on Rails", "JavaScript", "Stimulus" ],
         "Frontend & Design"         => [ "HTML", "CSS", "Tailwind", "Turbo", "SVG" ],
-        "Databases"                 => [ "PostgreSQL", "MySQL", "MongoDB" ],
-        "Testing"                   => [ "RSpec", "Capybara", "Cucumber" ],
+        "Databases"                 => [ "PostgreSQL", "MySQL", "SQLite", "MongoDB" ],
+        "Testing"                   => [ "minitest", "RSpec", "Capybara", "Cucumber" ],
         "Containerization"          => [ "Docker" ],
         "Cloud Providers"           => [ "DigitalOcean", "Heroku", "Render" ],
         "CI/CD"                     => [ "CircleCI", "Capistrano" ],
@@ -48,7 +48,7 @@ module ChemicalX
         "Data Formats"              => [ "JSON", "XML" ],
         "Storage Services"          => [ "Amazon S3" ],
         "Security"                  => [ "SSL Certificates" ],
-        "Background/Recurring Jobs" => [ "Sidekiq", "Delayed Job", "Sidekiq-Cron" ],
+        "Background/Recurring Jobs" => [ "Solid Queue", "Sidekiq", "Delayed Job", "Sidekiq-Cron" ],
         "Project Management"        => [ "Jira", "Trello" ]
       }
     end
